@@ -13,6 +13,8 @@ class MemoryMemberRepositoryTest {
 
     MemoryMemberRepository repository = new MemoryMemberRepository();
 
+    // 각 테스트가 종료될 때 마다 @AfterEach 실행
+    // 테스트는 각각 독립적으로 실행되어야 한다. 테스트 순서에 의존관계가 있는 것은 좋은 테스트가 아니다.
     @AfterEach
     public void afterEach() {
         repository.clearStore();
