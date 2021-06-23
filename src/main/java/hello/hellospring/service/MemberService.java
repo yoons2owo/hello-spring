@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-@Service
 public class MemberService {
 
     // final : 값을 생성자에서 초기화 한 이후에 변경할 수 없다.
