@@ -5,6 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
+@Repository
 public class MemoryMemberRepository implements MemberRepository {
 
     // 실무에는 ConcurrentHashMap, AtomicLong을 사용(동시성 문제)
